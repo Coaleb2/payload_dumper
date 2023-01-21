@@ -28,7 +28,8 @@ $ docker run --rm -v "${PWD}":/data -it payload_dumper /data/payload.bin --out /
 - Download payload_dumper.py and update_metadata_pb2.py
 - Extract your OTA zip and place payload.bin in the same folder as these files.
 - Open PowerShell, Command Prompt, or Terminal depending on your OS.
-- Enter the following command: python -m pip install protobuf
+- Enter the following commands: pip install protobuf==3.19.3 python3 -m pip install -r requirements.txt
+- python payload_dumper.py payload.bin to extract the payloads 
 
 ### Full OTA
 
